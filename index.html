@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylsheet" type="text/css" href="css/formulario.css">
     <title>Startup - Invest</title>
+    <!-- Titulo -->
+
 </head>
 
 <body>
-    
-    <div>
-        <h1>StartUp - Invest</h1>
+
+    <div class="campo">
+        <h1 id="tiulo">StartUp - Invest</h1>
         <p>Complete suas informações</p>
         <br>
         <form>
-            <fieldset>
-                <div>
-                    <label>Nome da Startup</label>
-                    <input type="text" name="nome" id="nome">
+            <fieldset class="infobasicas">
+                <div class="campo">
+                    <label><strong for="nome">Nome da Startup</strong></label>
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
-                <div>
-                    <label>E-mail</label>
-                    <input type="email" name="e_mail" id="e_mail">
+                <div class="campo">
+                    <label><strong for="nomeresp">Nome do responsável da Startup</strong></label>
+                    <input type="text" name="nomeresp" id="nomeresp" required>
                 </div>
 
-                <div>
-                    <label>Telefone</label>
-                    <input type="phone" name="phone" id="phone">
+                <div class="campo">
+                    <label><strong for="e_mail">E_mail</strong></label>
+                    <input type="email" name="e_mail" id="e_mail" required>
+                </div>
+
+                <div class="campo">
+                    <label><strong for="phone">Telefone de contato</strong></label>
+                    <input type="phone" name="phone" id="phone" required>
                 </div>
             </fieldset>
 
             <br>
-            <div>
+            <div class="campo">
                 <label>Informe as tecnologias de sua Startup</label>
                 <br>
                 <input type="checkbox" name="web" id="web"> Desenvolvimento Web<br>
@@ -50,8 +59,20 @@
                 <input type="checkbox" name="bigdata" id="bigdata">Big-Data, Analise de Dados<br>
             </div>
 
-        
+            <div class="campo">
+                <br>
+                <label>Relate um pouco dos objetivos de sua Startup</label>
+                <br>
+
+                <textarea rows="10" style="width: 30em" id="relato">
+
+                </textarea>
+            </div>
+
+            <button type="submit" class="botao">Concluído</button>
+
         </form>
     </div>
 </body>
+
 </html>
