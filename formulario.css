@@ -12,7 +12,7 @@
 #infobasicas {
     font-family: sans-serif;
     color: #380b61;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 fieldset {
@@ -24,7 +24,7 @@ body {
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
-    margin-left: 36%;
+    margin-left: 10%;
     margin-top: 2%;
     justify-content: center;
 }
@@ -44,6 +44,7 @@ button {
     margin-bottom: 1em;
     color: #59429d;
     display: block;
+    justify-content: center;
 }
 
 fieldset.infobasicas .campo {
@@ -52,13 +53,17 @@ fieldset.infobasicas .campo {
 }
 
 .campo input[type="text"],
-.campo input[type="e_mail"],
+.campo input[type="email"],
+.campo input[type="nome"],
+.campo input[type="nomeresp"],
+.campo input[type="phone"],
 .campo select,
 .campo textarea {
     padding: 0.2em;
     border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     display: block;
+    justify-content: center;
 }
 
 .campo select option {
@@ -68,5 +73,31 @@ fieldset.infobasicas .campo {
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-    background: #E0E0F8;
+    background: #b07eff;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-top: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: center;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: #003523;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#check {
+    display: inline-block;
 }
